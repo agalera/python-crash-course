@@ -6,7 +6,7 @@ Maybe someone told you about Python and all the wonderful things you can do.
 You heard about APIs, backend and frontend, client-server ... but still no clue?
 Learn the magic spells and become a snake charmer
 
-## Introduction
+## Introduction [TODO]
 
 This project aims to teach you the very basics of developing a web app with Python, HTML and CSS and JS.
 Understanding the basics of what happens in a browser and how the user (client) interacts with the backend (server) side.
@@ -39,7 +39,7 @@ Your set of tools for this trip:
 - Git [source](https://git-scm.com/)
 - Browser [wiki](https://en.wikipedia.org/wiki/Web_browser)
 
-## Content
+## Content [ TODO]
 
 1. Introduction
 2. What am I developing?
@@ -47,11 +47,11 @@ Your set of tools for this trip:
 4. Drafting
 5. Displaying in the browser
 6. Storing things
-7.
+7. Retrieving data from the internet
 
-TODO
 
-## Bibliography
+
+## Bibliography [TODO]
 
 - Python Crash
   Course
@@ -60,3 +60,5 @@ TODO
 - Client - Server: [wiki](https://en.wikipedia.org/wiki/Client%E2%80%93server_model)
 
 - Discogs API [reference](https://www.discogs.com/developers/)
+
+- Codeschool WEB Development Begginers Guide [PDF](http://courseware.codeschool.com/beginners_guide/CodeSchool-BeginnersGuideToWebDevelopment.pdf)
