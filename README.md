@@ -1,0 +1,2 @@
+# musicpy
+Python Crash Course 
