@@ -4,29 +4,46 @@
 #+STARTUP: showall
 
 ** Origins: A bit of history
-[[file:images/python-logo-inkscape.svg]]
 
-Designed by Guido van Rossum in 1991
-Multi-paradigm: object-oriented, imperative, functional, procedural, reflective
-Developer: Python Software Foundation
-Stable release: 3.6.2 / 2.7.13
-Typing discipline: duck, dynamic, strong
-OS: Cross platform
-License: Python Software Foundation License
-Filename extensions: .py, .pyc | .pyd (windows dll), .pyo (pyc with optimizations), .pyw (for windows), .pyz (python script archive)
-People:
+- Designed by Guido van Rossum in 1991
+
+- Multi-paradigm: object-oriented, imperative, functional, procedural, reflective
+
+- Developer: Python Software Foundation
+
+- Stable release: 3.6.2 / 2.7.13
+
+- Typing discipline: duck, dynamic, strong
+
+- OS: Cross platform
+
+- License: Python Software Foundation License
+
+- Filename extensions: .py, .pyc | .pyd (windows dll), .pyo (pyc with optimizations), .pyw (for windows), .pyz (python script archive)
+
+- People:
 [[https://github.com/rhettinger][Raymond Hettinger]]
 [[https://github.com/gvanrossum][Guido Van Rossum]]
 [[https://github.com/mitsuhiko][Armin Ronacher]]
 
 ** Where to begin
 Official [[https://www.python.org/][Python Software Fundation]]
-*** PEP
+*** PEP: Python Enhancement Proposal
+
 [[https://www.python.org/dev/peps/pep-0001/][What PEPs are?]]
-Important PEPS: http://pep8.org/ + import this (import antigravity)
+
+| Design document providing information to the Python community, or describing a new feature for Python or its processes or environment.
+
+Important PEPS:
+-  http://pep8.org/
+-  PEP 20: Zen of Python: >>> import this (import antigravity)
+
 *** Community & Packages
-[[https://github.com/search?l=Python&q=python&type=Repositories&utf8=%25E2%259C%2593][Python in Github]]
+
+[[https://github.com/search?l=Python&q=python&type=Repositories&utf8=%25E2%259C%2593][Explore Python in Github]]
+
 [[https://pypi.python.org/pypi][The python package index: PyPi]]
+
 ** Python Workshop
 
 Install [[http://jupyter.org/install.html][Jupyter Notebook]]
@@ -36,8 +53,10 @@ Go to workshop folder and install the requirements in order to have the exercise
 **** Fundamentals
 [[https://github.com/dlab-berkeley/python-fundamentals/blob/master/Day_1/01_Running-Python.md][Github Python Fundamentals]]
 
+python allows several arguments. Just type:  --help
+
 #+BEGIN_SRC
-$ python allows several arguments. Just type:  --help
+$ python --help
 $ python -c "print("Jajaja")"
 $ python -i file.py
 #+END_SRC
@@ -54,16 +73,23 @@ $ python hello_world.py arg1 arg2
 [[https://awesome-python.com/][Awesome Python]]
 *** Newsletters
 [[http://pycoders.com/archive/][Pycoders Weekly]]
+
 [[http://importpython.com/newsletter/][Import Python]]
 *** Podcasts
+
 [[https://talkpython.fm/][Talk Python To Me]]
+
 [[https://www.podcastinit.com/][Podcast Init]]
+
 [[http://radiofreepython.com/][Radio Python]]
+
 *** Meetups
 [[https://www.meetup.com/es-ES/Madrid-Python-Meetup/][Meetup Python Madrid]]
 *** Conferences
 [[https://2017.es.pycon.org/en/][PyConES]]
+
 [[https://www.youtube.com/channel/UCrJhliKNQ8g0qoE_zvL8eVg][PyCon 2017 Videos]]
 ** Bibliography
 - [[http://jupyter.org/install.html][Jupyter Notebook]]
-- [[ https://github.com/00111000/Imports-in-Python][Imports in Python]], [[https://medium.com/@ramrajchandradevan/python-init-py-modular-imports-81b746e58aae][importlib]]
+- [[ https://github.com/00111000/Imports-in-Python][Imports in Python]]
+- [[https://medium.com/@ramrajchandradevan/python-init-py-modular-imports-81b746e58aae][importlib]]
