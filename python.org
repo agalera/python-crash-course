@@ -9,7 +9,7 @@
 
 - Multi-paradigm: object-oriented, imperative, functional, procedural, reflective
 
-- Developer: Python Software Foundation
+- Developer: Python Software Foundation 2011
 
 - Stable release: 3.6.2 / 2.7.13
 
@@ -22,12 +22,20 @@
 - Filename extensions: .py, .pyc | .pyd (windows dll), .pyo (pyc with optimizations), .pyw (for windows), .pyz (python script archive)
 
 - People:
-[[https://github.com/rhettinger][Raymond Hettinger]]
+
+[[https://www.youtube.com/results?search_query=raymond+hettinger][Raymond Hettinger]]
+
 [[https://github.com/gvanrossum][Guido Van Rossum]]
+
 [[https://github.com/mitsuhiko][Armin Ronacher]]
 
+[[https://www.youtube.com/watch?v=sPiWg5jSoZI][David Beazley]]
+
 ** Where to begin
-Official [[https://www.python.org/][Python Software Fundation]]
+
+Your best source: Official [[https://www.python.org/][Python Software Fundation]]
+
+
 *** PEP: Python Enhancement Proposal
 
 [[https://www.python.org/dev/peps/pep-0001/][What PEPs are?]]
@@ -35,8 +43,14 @@ Official [[https://www.python.org/][Python Software Fundation]]
 | Design document providing information to the Python community, or describing a new feature for Python or its processes or environment.
 
 Important PEPS:
--  http://pep8.org/
--  PEP 20: Zen of Python: >>> import this (import antigravity)
+-  [[http://pep8.org/][PEP 8]]
+-  PEP 20: Zen of Python
+
+#+BEGIN_SRC python
+import this
+#+END_SRC
+
+| About [[https://www.youtube.com/watch?v=wf-BqAjZb8M][PEP8]]
 
 *** Community & Packages
 
@@ -46,14 +60,21 @@ Important PEPS:
 
 ** Python Workshop
 
-Install [[http://jupyter.org/install.html][Jupyter Notebook]]
+Install [[http://jupyter.org/install.html][Jupyter Notebook]] /
 
-Go to workshop folder and install the requirements in order to have the exercises in your browser.
+This will let us interactively play the exercises in the browser.
+Go to workshop folder and install the requirements file.
+
+#+BEGIN_SRC sh
+pip install -r requirements.txt
+#+END_SRC
 
 **** Fundamentals
+
 [[https://github.com/dlab-berkeley/python-fundamentals/blob/master/Day_1/01_Running-Python.md][Github Python Fundamentals]]
 
-python allows several arguments. Just type:  --help
+Python interpeter options.
+Lets just type:  --help
 
 #+BEGIN_SRC
 $ python --help
@@ -61,12 +82,28 @@ $ python -c "print("Jajaja")"
 $ python -i file.py
 #+END_SRC
 
+**** Intermediate
+
+
+**** Mastering
+
+**Why python rules**
 #+BEGIN_SRC python
-$ python hello_world.py arg1 arg2
+import antigravity
 #+END_SRC
 
-**** Intermediate
-**** Mastering
+
+** Where is Python? Everywhere!
+
+- [[https://www.reddit.com/][Reddit]]
+- [[https://www.youtube.com/][Youtube]]
+
+[[http://www.bedjango.com/blog/top-5-sites-built-django-framework/][Sites using Django]]
+
+- [[https://www.quora.com/What-is-the-technology-stack-behind-Pinterest-1][Pinterest (Django)]]
+- [[http://reinout.vanrees.org/weblog/2011/06/07/bitbucket.html][Bitbucket]]
+- [[https://medium.com/@InstagramEng/engineering-the-instagram-stories-team-cec648401789][Instagram]]
+- [[https://github.com/washingtonpost][The Washington Post]]
 
 ** Becoming a Pythonist
 *** Curate Awesome List

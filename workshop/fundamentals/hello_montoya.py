@@ -1,8 +1,8 @@
 #!/usr/bin/env python
+# coding: utf-8
 import sys
 
 def main(*args, **kwargs):
-    print("Hello World!")
     print(args)
     print(kwargs)
 
