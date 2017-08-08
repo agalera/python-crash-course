@@ -1,17 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from __future__ import division
 import sys
+import os
+import urllib
 import datetime
-from collections import namedtuple
-
-#import logging
-# https://docs.python.org/2/library/logging.html
-
+import logging
+# about unicode literals http://python-future.org/unicode_literals.html
 # third party libs
-# import requests
+import requests
 
 
-# Globals capital letters, usually on top of the file. Avoid using them. Better approach always a configuration file or in this case, as a class attribute
+# GLOBALS_IN_CAPITAL_LETTERS, usually on top of the file.
+# Avoid their use. Better approach always a configuration file or in this case, as a class attribute
 WEATHER_API_URL = "https://www.metaweather.com/api/"
 
 
@@ -40,9 +41,10 @@ def celsius_to_fahrenheit(temperature):
     # https://docs.python.org/2/library/exceptions.html
     try:
         temperature = int(temperature)
-    except BaseException as e:
+    except Exception as e:
         raise e
     return (temperature * 1.8) + 32
+
 
 
 # Google Style is widely used as well
@@ -64,18 +66,16 @@ def fahrenheit_to_celsius(temperature):
         raise TypeError("uncomputable temperature")
 
 
-# Exceptions
-# https://docs.python.org/2/library/exceptions.html
-
-
-# named tuples have an instance method namedtuple._make
-# Constructors, lambda use, Magic method
 class Temperature(object):
 
     def __init__(self, temp, notation="C"):
+        """Constructor for a Temperature
+        :param temp: digit value for temperature
+        :param notation: Specifies if Celsius or Fahrenheit
+        """
         self.notation = notation
         self.to_fahrenheit = lambda t: (t * 1.8) + 32 # instance has control
-        self.to_celsius = lambda t: (t * 1.8) + 32
+        self.to_celsius = lambda t: (t - 32) / 1.8
 
         if notation == "C":
             self.celsius = temp
@@ -87,8 +87,17 @@ class Temperature(object):
         else:
             raise TypeError("Wrong notation format: C or F are allowed")
 
+    def __str__(self):
+        return "C: {}, F: {} degrees".format(self.celsius, self.fahrenheit)
+
+    def __repr__(self):
+        return "I represent heat! but can be negative {}".format(str(self))
+
     def __add__(self, b):
         return self.celsius + b.celsius
+
+    def __sub__(self, b):
+        return self.celsius - b.celsius
 
     # doesn't access to class or instance attrs is like a func that belongs to a context
     @staticmethod
@@ -97,7 +106,6 @@ class Temperature(object):
 
     @staticmethod
     def to_celsius(temp):
-        # Take not of division: future concept. future division!
         return (temp - 32) / 1.8
 
 
