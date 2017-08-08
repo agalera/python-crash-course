@@ -1,17 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import sys
-import os
-import urllib
 import datetime
-import logging
 from collections import namedtuple
+
+#import logging
+# https://docs.python.org/2/library/logging.html
 
 # third party libs
 # import requests
 
 
-# globals capital letters, usually on top of the file. Avoid using them. Better approach always a configuration file or in this case, as a class attribute
+# Globals capital letters, usually on top of the file. Avoid using them. Better approach always a configuration file or in this case, as a class attribute
 WEATHER_API_URL = "https://www.metaweather.com/api/"
 
 
@@ -40,10 +40,9 @@ def celsius_to_fahrenheit(temperature):
     # https://docs.python.org/2/library/exceptions.html
     try:
         temperature = int(temperature)
-    except Exception as e:
+    except BaseException as e:
         raise e
     return (temperature * 1.8) + 32
-
 
 
 # Google Style is widely used as well
@@ -63,6 +62,10 @@ def fahrenheit_to_celsius(temperature):
         return (temperature - 32) / 1.8
     except:
         raise TypeError("uncomputable temperature")
+
+
+# Exceptions
+# https://docs.python.org/2/library/exceptions.html
 
 
 # named tuples have an instance method namedtuple._make

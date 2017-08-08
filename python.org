@@ -60,13 +60,12 @@ import this
 
 ** Python Workshop
 
-Install [[http://jupyter.org/install.html][Jupyter Notebook]] /
+Install [[http://jupyter.org/install.html][Jupyter Notebook]]
 
 This will let us interactively play the exercises in the browser.
-Go to workshop folder and install the requirements file.
 
 #+BEGIN_SRC sh
-pip install -r requirements.txt
+pip install jupyter
 #+END_SRC
 
 **** Fundamentals
@@ -83,13 +82,24 @@ $ python -i file.py
 #+END_SRC
 
 **** Intermediate
-
-
 **** Mastering
 
-**Why python rules**
-#+BEGIN_SRC python
-import antigravity
+[[https://virtualenv.pypa.io/en/stable/][Virtualenv]]
+virtualenv is a tool to create isolated Python environments.
+
+#+BEGIN_SRC bash
+$ virtualenv ~/.virtualenvs/pcc -p [python-interpreter]
+$ source ~/.virtualenvs/pcc/bin/activate
+(virtualenv) $ pip freeze
+(virtualenv) $ pip install -r workshop/requirements.txt
+#+END_SRC
+
+**PY3**
+Virtualenvs already in Python.
+
+https://docs.python.org/3/library/venv.html
+#+BEGIN_SRC bash
+python3 -m venv <path>
 #+END_SRC
 
 
@@ -107,26 +117,34 @@ import antigravity
 
 ** Becoming a Pythonist
 *** Curate Awesome List
-[[https://awesome-python.com/][Awesome Python]]
+- [[https://awesome-python.com/][Awesome Python]]
 *** Newsletters
-[[http://pycoders.com/archive/][Pycoders Weekly]]
-
-[[http://importpython.com/newsletter/][Import Python]]
+- [[http://pycoders.com/archive/][Pycoders Weekly]]
+- [[http://importpython.com/newsletter/][Import Python]]
 *** Podcasts
-
-[[https://talkpython.fm/][Talk Python To Me]]
-
-[[https://www.podcastinit.com/][Podcast Init]]
-
-[[http://radiofreepython.com/][Radio Python]]
+- [[https://talkpython.fm/][Talk Python To Me]]
+- [[https://www.podcastinit.com/][Podcast Init]]
+- [[http://radiofreepython.com/][Radio Python]]
 
 *** Meetups
-[[https://www.meetup.com/es-ES/Madrid-Python-Meetup/][Meetup Python Madrid]]
-*** Conferences
-[[https://2017.es.pycon.org/en/][PyConES]]
+- [[https://www.meetup.com/es-ES/Madrid-Python-Meetup/][Meetup Python Madrid]]
 
-[[https://www.youtube.com/channel/UCrJhliKNQ8g0qoE_zvL8eVg][PyCon 2017 Videos]]
+*** Conferences
+- [[https://2017.es.pycon.org/en/][PyConES]]
+
+- [[https://www.youtube.com/channel/UCrJhliKNQ8g0qoE_zvL8eVg][PyCon 2017 Videos]]
+
+*** Miscellaneous
+- [[https://github.com/OrkoHunter/python-easter-eggs][Python Easter Eggs]]
+
+- XKCD
+
+#+BEGIN_SRC python
+import antigravity
+#+END_SRC
+
 ** Bibliography
+
 - [[http://jupyter.org/install.html][Jupyter Notebook]]
 - [[ https://github.com/00111000/Imports-in-Python][Imports in Python]]
 - [[https://medium.com/@ramrajchandradevan/python-init-py-modular-imports-81b746e58aae][importlib]]
